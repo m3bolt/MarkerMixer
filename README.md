@@ -7,9 +7,13 @@ The marker mixer is designed to use servos to slide markers in out and of a cent
 
 Assembly instructions to follow after it is removed from WIP status. 
 
+
 Print the following for one layer of 3 markers, you may repeat this to add more layers of 3 markers each.
 
 1x MarkerBlender_Hub_v0.stl
+
 3x MarkerBlender_Body_v0.stl    NOTE: Requires supports!
+
 3x MarkerBlender_Slider_v0.stl
+
 3x MarkerBlender_ServoLink_v0.stl

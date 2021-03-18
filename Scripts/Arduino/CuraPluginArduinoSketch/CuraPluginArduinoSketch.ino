@@ -1,11 +1,12 @@
-/* Sweep
-  by BARRAGAN <http://barraganstudio.com>
-  This example code is in the public domain.
-
-  modified 8 Nov 2013
-  by Scott Fitzgerald
-  http://www.arduino.cc/en/Tutorial/Sweep
-*/
+/*-----------------
+ Magic Marker Mixer
+ Github: https://github.com/m3bolt/MarkerMixer
+ Designers:
+ Code: https://github.com/kackle1998 
+ Mech Design: https://github.com/m3bolt/ , https://github.com/kackle1998 
+ WIP
+ Initial Arduino+Cura proof of concept for 1in-1out multicolor 3D Printing
+--------------------*/
 
 #include <Servo.h>
 
@@ -21,9 +22,7 @@ void setup() {
  servo1.attach(servo1Pin); pinMode(inputServo1, INPUT);
  servo2.attach(servo2Pin); pinMode(inputServo2, INPUT);
  servo3.attach(servo3Pin); pinMode(inputServo3, INPUT);
-  
-
-  servo1.write(minServo1); servo2.write(minServo2); servo3.write(minServo3);
+ servo1.write(minServo1); servo2.write(minServo2); servo3.write(minServo3);
 }
 
 void loop()

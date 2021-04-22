@@ -1,4 +1,4 @@
-# Magic Marker Mixer
+ Magic Marker Mixer
  #Github: https://github.com/m3bolt/MarkerMixer
  #Designers:
  #Code: https://github.com/kackle1998 
@@ -78,29 +78,28 @@ class FilamentChange(Script):
 
     def execute(self, data: List[str]):
         """Inserts the filament change g-code at specific layer numbers.
-
         :param data: A list of layers of g-code.
         :return: A similar list, with filament change commands inserted.
         """
         #Servo1
         layer_nums_S1E = self.getSettingValueByKey("layer_number_S1E")
         layer_nums_S1R = self.getSettingValueByKey("layer_number_S1R") 
-        servo1_engage = "P1_23 S255"
-        servo1_retract = "P1_23 S0"
+        servo1_engage = "MarkerOneEngage"
+        servo1_retract = "MarkerOneRetract"
         servo1_engage = servo1_engage + " ; engage servo one \n"
         servo1_retract = servo1_retract + " ; retract servo one \n"
         #Servo2
         layer_nums_S2E = self.getSettingValueByKey("layer_number_S2E")
         layer_nums_S2R = self.getSettingValueByKey("layer_number_S2R") 
-        servo2_engage = "P1_22 S255"
-        servo2_retract = "P1_22 S0"
+        servo2_engage = "MarkerTwoEngage"
+        servo2_retract = "MarkerTwoRetract"
         servo2_engage = servo2_engage + " ; engage servo two \n"
         servo2_retract = servo2_retract + " ; retract servo two \n"
          #Servo3
         layer_nums_S3E = self.getSettingValueByKey("layer_number_S3E")
         layer_nums_S3R = self.getSettingValueByKey("layer_number_S3R") 
-        servo3_engage = "P1_21 S255"
-        servo3_retract = "P1_21 S0"
+        servo3_engage = "MarkerThreeEngage"
+        servo3_retract = "MarkerThreeRetract"
         servo3_engage = servo3_engage + " ; engage servo three \n"
         servo3_retract = servo3_retract + " ; retract servo three \n"
 

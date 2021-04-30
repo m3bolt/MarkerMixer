@@ -1,4 +1,4 @@
- Magic Marker Mixer
+# Magic Marker Mixer
  #Github: https://github.com/m3bolt/MarkerMixer
  #Designers:
  #Code: https://github.com/kackle1998 

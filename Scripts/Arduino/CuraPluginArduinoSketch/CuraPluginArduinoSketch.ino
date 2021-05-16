@@ -13,7 +13,7 @@ int pos1 = 30; int minServo1 = 30; int maxServo1 = 115; //Current Pos, min Pos, 
 int pos2 = 30; int minServo2 = 30; int maxServo2 = 115;
 int pos3 = 30; int minServo3 = 30; int maxServo3 = 115;
 
-int servo1Pin=1; int servo2Pin=2; int servo3Pin=3; //Change these to whatever pin numbers you're using
+int servo1Pin=7; int servo2Pin=8; int servo3Pin=9; //Change these to whatever pin numbers you're using
 int inputServo1 = 4; int inputServo2 = 5; int inputServo3 = 6; //Same here
 
 void setup() {
